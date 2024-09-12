@@ -2,3 +2,5 @@
 
 Web Technolgies - CS571
 
+- Replicating a website from scratch : Assignment 1
+
