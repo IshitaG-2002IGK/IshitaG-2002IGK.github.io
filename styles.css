@@ -145,31 +145,26 @@ header nav a:hover {
   text-align: center;
   padding: 129px;
   background-color: #f1f1f1;
-
-  
 }
 
 .testimonial-section blockquote {
   font-size: 40rem;
   color: #333;
   margin-bottom: 20px;
-  /* font-size: 14px; 
-  font-family: 'Montserrat'; 
-  color: black;" */
 }
 
 .testimonial-section .author {
-  font-size: 13px;
-  font-weight: bold;
-  color: black;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
+.author-name {
+  color: black; /* "John Doe" in black */
+  font-weight: bold; /* You can remove this if you don't want bold */
+}
 
-
-.author {
-  font-size: 14px;
-  color: black;
-  margin-top: 10px; /* Add a small margin above the author */
+.author-title {
+  color: grey; /* Rest of the text in grey */
 }
 
 .pricing-section {
