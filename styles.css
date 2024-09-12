@@ -32,7 +32,7 @@ header {
   background-color: #fff;
   /* padding: 26px 40px; */
   position: relative; 
-  width: 1600px;
+  /* width: 1600px; */
   top: 0;
   /* right: -70px; */
   display: flex;
@@ -45,7 +45,6 @@ header {
 
 header nav a {
   margin-right: 50px;
-  /* margin-right: 15px; */
   text-decoration: none;
   color: grey;
   font-size: 13px;
@@ -60,12 +59,12 @@ header nav a:hover {
   height: 800px;
   /* background-image: url("C:/Users/Dell/Desktop/ishi usc/web-hw1/images/lawyer.jpg"); */
   background-image: url("images/lawyer.jpg");
-  width: 1600px;
+  /* width: 1600px; */
   background-position: center;
-  background-size: 1600px 853px; 
+  /* background-size: 1600px 853px;  */
   display: flex;
   align-items: center;
-  padding: 50px;
+  /* padding: 50px; */
   background-repeat: no-repeat;
   margin-top: 70px;
   overflow: hidden;
@@ -247,21 +246,16 @@ header nav a:hover {
   width: 17.5%;
   height: 48vh; /* Keep the height */
   background-image: 
-      /* Horizontal lines */
-      linear-gradient(0deg, #e0e0e0 1px, transparent 1px), /* Very light grey */
-      /* Vertical lines */
-      linear-gradient(90deg, #e0e0e0 1px, transparent 1px), /* Very light grey */
-      /* Diagonal lines (top-left to bottom-right) */
+      linear-gradient(0deg, #e0e0e0 1px, transparent 1px), 
+      linear-gradient(90deg, #e0e0e0 1px, transparent 1px), 
       linear-gradient(45deg, transparent 49.5%, #e0e0e0 49.5%, #e0e0e0 50.5%, transparent 50.5%), /* Very light grey */
-      /* Diagonal lines (top-right to bottom-left) */
       linear-gradient(135deg, transparent 49.5%, #e0e0e0 49.5%, #e0e0e0 50.5%, transparent 50.5%);
-      /* Very light grey */
 
   background-size: 
-      15px 15px, /* Smaller size for horizontal lines */
-      15px 15px, /* Smaller size for vertical lines */
-      15px 15px, /* Smaller size for 45deg diagonal lines */
-      15px 15px; /* Smaller size for -45deg diagonal lines */
+      15px 15px, 
+      15px 15px, 
+      15px 15px,
+      15px 15px; 
   background-position: 
       0 0,
       0 0,
@@ -293,7 +287,8 @@ header nav a:hover {
 }
 
 .pricing-card ul li {
-  font-size: 16px;
+  font-size: 12px;
+  font-family: 'Montserrat';
   margin-bottom: 10px;
   color: #555;
   isolation:isolate;
@@ -378,9 +373,9 @@ header nav a:hover {
 }
 
 .promo-content p {
-  /* font-family: Arial, sans-serif;  */
-  font-size: 13px;
-  margin-bottom: 67px;
+  font-family: Arial, sans-serif; 
+  font-size: 11px;
+  margin-bottom: 64px;
   /* color: #fff;
   margin-bottom: 30px; */
 }
@@ -416,6 +411,7 @@ footer h2 {
 footer p {
   margin-bottom: 20px;
   font-size: 0.6rem;
+  font-family: 'Montserrat';
 }
 
 .social-icons a {
@@ -431,13 +427,13 @@ footer p {
 .cta-btn {
   background-color: #ffdd00; 
   color: #000; 
-  font-size: 15px; 
-  padding: 15px 30px; 
+  font-size: 12px; 
+  padding: 15px 20px; 
   border: none; 
   border-radius: 0px; 
   text-decoration: none; 
-  font-weight: bold; 
   display: inline-block; 
+  font-family: 'Montserrat';
   /* transition: background-color 0.3s ease, color 0.3s ease; */
 }
 
