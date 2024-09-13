@@ -97,10 +97,11 @@ nav {
 }
 
 .lawyer-signup-box input {
-  width: 90%;
+  width: 93%;
   padding: 10px;
   margin-bottom: 20px;
   border: none;
+  height: 30px;
   font-size: 16px;
 }
 
@@ -258,7 +259,7 @@ nav {
   width: 250px;
   text-align: center;
   width: 17.5%;
-  height: 45vh; /* Keep the height */
+  height: 55vh; /* Keep the height */
   background-image: 
       linear-gradient(0deg, #e0e0e0 1px, transparent 1px), 
       linear-gradient(90deg, #e0e0e0 1px, transparent 1px), 
@@ -305,6 +306,7 @@ nav {
   font-family: 'Montserrat';
   margin-bottom: 10px;
   color: #555;
+  line-height: 2em;
   isolation:isolate;
 
 }
@@ -313,7 +315,9 @@ nav {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
   color: #333;
+  font-weight: 450;
   isolation:isolate;
 
 }
@@ -343,7 +347,7 @@ nav {
   background-color: #00264d;
 }
 
-.promo-section {
+.camera-section {
   position: relative;
   display: flex;
   justify-content: center;
@@ -361,7 +365,7 @@ nav {
   overflow: hidden; 
 }
 
-.promo-section::before {
+.camera-section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -372,7 +376,7 @@ nav {
   z-index: 1; 
 }
 
-.promo-content {
+.camera-content {
   position: relative;
   text-align: center;
   z-index: 2; 
@@ -380,7 +384,7 @@ nav {
   color: white;
 }
 
-.promo-content h1 {
+.camera-content h1 {
   /* font-family: , sans-serif;  */
   font-size: 36px;
   /* font-weight: bold; */
@@ -388,9 +392,9 @@ nav {
   margin-bottom: 20px; */
 }
 
-.promo-content p {
+.camera-content p {
   font-family: Arial, sans-serif; 
-  font-size: 11px;
+  font-size: 14px;
   margin-bottom: 20px;
   /* color: #fff;
   margin-bottom: 30px; */
