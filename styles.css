@@ -56,7 +56,6 @@ nav {
 
 .lawyer-sec {
   height: 800px;
-  /* background-image: url("C:/Users/Dell/Desktop/ishi usc/web-hw1/images/lawyer.jpg"); */
   background-image: url("images/lawyer.jpg");
   /* width: 1600px; */
   background-position: center;
@@ -185,7 +184,7 @@ nav {
 
 
 
-.pricing-section {
+.price-plan {
   position: relative;
   text-align: center;
   padding: 110px 0;
@@ -207,7 +206,7 @@ nav {
 }
 
 
-.pricing-section::before {
+.price-plan::before {
   content: "";
   position: absolute;
   /* top: 0;
@@ -434,12 +433,12 @@ footer p {
   font-family: 'Montserrat';
 }
 
-.social-icons a {
+.social-icons-optima a {
   margin: 0 10px;
   display: inline-block;
 }
 
-.social-icons img {
+.social-icons-optima img {
   width: 26px;
   height: 26px;
 }
