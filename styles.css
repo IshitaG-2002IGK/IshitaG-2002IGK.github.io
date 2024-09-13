@@ -6,6 +6,8 @@ body {
   overflow-x: hidden; 
 }
 
+/* <!-- ''' Header Menu Bar ''' --> */
+
 header {
   width: 100%;
 
@@ -23,14 +25,14 @@ nav {
   height:2px;
 }
 
-.menu-left span {
+.left-menu-side span {
   /* font-weight: bold; */
   font-family: 'Montserrat';
   /* margin-right: 40px; */
   padding-left: 80px;
 }
 
-.menu-right a {
+.right-menu-side a {
   text-decoration: none;
   color: #D3D3D3;
   margin-left: 10x;
@@ -45,10 +47,14 @@ nav {
 } */
 
 
-.menu-right a:hover {
+.right-menu-side a:hover {
   color: #333;
 }
-.hero-section {
+
+/* <!-- ''' Lawyer Image Section ''' --> */
+
+
+.lawyer-sec {
   height: 800px;
   /* background-image: url("C:/Users/Dell/Desktop/ishi usc/web-hw1/images/lawyer.jpg"); */
   background-image: url("images/lawyer.jpg");
@@ -60,11 +66,12 @@ nav {
   /* padding: 50px; */
   background-repeat: no-repeat;
   margin-top: 60px;
+  padding-left: 43px;
   overflow: hidden;
    
 }
 
-.signup-box {
+.lawyer-signup-box {
   background-color: #0B3C5D;
   color: white;
   padding: 60px;
@@ -72,15 +79,16 @@ nav {
   max-width: 100%;
   margin-left: 200px;
   margin-top: -176px;
+  /* height: 5px; */
   
 }
 
-.signup-box h2 {
+.lawyer-signup-box h2 {
   margin: 0;
   margin-bottom: 10px;
 }
 
-.signup-box p {
+.lawyer-signup-box p {
   color: #ffdd00;
   /* margin-bottom: 20px; */
   font-weight: lighter;
@@ -88,7 +96,7 @@ nav {
   font-style: italic;
 }
 
-.signup-box input {
+.lawyer-signup-box input {
   width: 90%;
   padding: 10px;
   margin-bottom: 20px;
@@ -96,7 +104,7 @@ nav {
   font-size: 16px;
 }
 
-.signup-box button {
+.lawyer-signup-box button {
   background-color: #ffdc14;
   border: none;
   padding: 10px;
@@ -106,7 +114,10 @@ nav {
   cursor: pointer;
 }
 
-.features-section {
+/* <!-- ''' Amazing Features presented ''' --> */
+
+
+.amaze-feature {
   display: flex;
   justify-content: space-around;
   padding: 100px 8%;
@@ -134,19 +145,22 @@ nav {
   
 }
 
-.testimonial-section {
+/* <!-- ''' Joe Doe - Founder Section ''' --> */
+
+
+.john-doe-sect {
   text-align: center;
   padding: 129px;
   background-color: #f1f1f1;
 }
 
-.testimonial-section blockquote {
+.john-doe-sect blockquote {
   font-size: 40rem;
   color: #333;
   margin-bottom: 20px;
 }
 
-.testimonial-section .author {
+.john-doe-sect .author {
   font-size: 14px;
   margin-top: 10px;
 }
@@ -160,10 +174,15 @@ nav {
   color: grey; /* Rest of the text in grey */
 }
 
+
+/* <!-- ''' Pricing card grid layout ''' --> */
+
+
+
 .pricing-section {
   position: relative;
   text-align: center;
-  padding: 60px 0;
+  padding: 110px 0;
   /* background-image: url("C:/Users/Dell/Desktop/ishi usc/web-hw1/images/glasses.png"); */
   /* background-image: url("images/glasses.png");      */
   background-size: cover;
@@ -363,7 +382,7 @@ nav {
 .promo-content p {
   font-family: Arial, sans-serif; 
   font-size: 11px;
-  margin-bottom: 64px;
+  margin-bottom: 70px;
   /* color: #fff;
   margin-bottom: 30px; */
 }
@@ -418,6 +437,7 @@ footer p {
   font-size: 12px; 
   padding: 15px 20px; 
   border: none; 
+
   border-radius: 0px; 
   text-decoration: none; 
   display: inline-block; 
