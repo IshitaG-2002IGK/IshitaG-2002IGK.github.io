@@ -6,56 +6,42 @@ body {
   overflow-x: hidden; 
 }
 
-nav a {
-  text-decoration: none; 
-  border: none; 
-  position: relative;
-  color: grey; 
-  padding: 10px; 
-  margin: 0 10px;
-  
-}
-
-nav a:hover {
-  color: black; 
-}
-
-menu{
-  position: absolute;
-  width: 20%;
-  top: 50%;
-  text-align: right;
-  right: 20px; /* Adjust this value to control the distance from the right */
-  transform: translateY(-50%);
-}
-
 header {
-  background-color: #fff;
-  /* padding: 26px 40px; */
-  position: relative; 
-  /* width: 1600px; */
-  top: 0;
-  /* right: -70px; */
+  width: 100%;
+
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: none;
-  /* z-index: 1000; */
-  /* float:right; */
+  /* padding: 20px; */
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 20px 20px 0;  */
+  padding: 40px 0px 1px; 
 }
 
-header nav a {
-  margin-right: 50px;
+.menu-left span {
+  /* font-weight: bold; */
+  font-family: 'Montserrat';
+  /* margin-right: 40px; */
+  padding-left: 80px;
+}
+
+.menu-right a {
   text-decoration: none;
-  color: grey;
-  font-size: 13px;
-  font-weight: lighter;
+  color: #999;
+  margin-left: 50x;
+  padding-right:20px;
+  padding-left: 50px;
+  margin-right:auto;
+  /* gap:-40px */
 }
 
-header nav a:hover {
-  color: black;
+.menu-right a:hover {
+  color: #333;
 }
-
 .hero-section {
   height: 800px;
   /* background-image: url("C:/Users/Dell/Desktop/ishi usc/web-hw1/images/lawyer.jpg"); */
