@@ -33,8 +33,6 @@ body {
 
 
 
-/* <!-- ''' Header Menu Bar ''' --> */
-
 header {
   width: 100%;
 
@@ -78,7 +76,7 @@ nav {
   color: #333;
 }
 
-/* <!-- ''' Lawyer Image Section ''' --> */
+
 
 
 .lawyer-sec {
@@ -141,7 +139,6 @@ nav {
   cursor: pointer;
 }
 
-/* <!-- ''' Amazing Features presented ''' --> */
 
 
 .amaze-feature {
@@ -177,8 +174,6 @@ nav {
   
 }
 
-/* <!-- ''' Joe Doe - Founder Section ''' --> */
-
 
 .john-doe-sect {
   text-align: center;
@@ -205,10 +200,6 @@ nav {
 .author-title {
   color: grey; /* Rest of the text in grey */
 }
-
-
-/* <!-- ''' Pricing card grid layout ''' --> */
-
 
 
 .price-plan {
@@ -249,6 +240,11 @@ nav {
 
   /* filter: grayscale(100%)brightness(1.2);  */
   /* opacity: 0.2;  */
+
+  /* gradient-for-grid, Claude */
+  /* <Gradient used for grid>, (<#6 lines>), <how to create linear gradient> --> */
+
+
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -430,13 +426,14 @@ nav {
 }
 
 .cta-button {
-  background-color: #ffdc14;
-  color: #000;
-  font-size: 18px;
   padding: 15px 80px;
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  background-color: #ffdc14;
+  color: #000;
+  font-size: 18px;
+
   /* font-weight: bold; */
   display: inline-block;
   /* transition: background-color 0.3s ease, color 0.3s ease; */
