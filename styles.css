@@ -19,7 +19,8 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   /* padding: 20px 20px 0;  */
-  padding: 40px 0px 1px; 
+  padding: 40px 12px 0px; 
+  height:2px;
 }
 
 .menu-left span {
@@ -32,12 +33,17 @@ nav {
 .menu-right a {
   text-decoration: none;
   color: #999;
-  margin-left: 50x;
-  padding-right:20px;
-  padding-left: 50px;
-  margin-right:auto;
+  margin-left: 10x;
+  padding-right:25px;
+  /* padding-left: px; */
+  /* margin-right:auto; */
   /* gap:-40px */
 }
+
+/* .menu-right a:first-child {
+  margin-left: 0; /* removing left margin 
+} */
+
 
 .menu-right a:hover {
   color: #333;
