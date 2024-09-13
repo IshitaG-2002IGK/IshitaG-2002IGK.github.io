@@ -6,6 +6,33 @@ body {
   overflow-x: hidden; 
 }
 
+
+.social-icons-optima a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons-optima img {
+  width: 26px;
+  height: 26px;
+}
+
+.cta-btn {
+  background-color: #ffdd00; 
+  color: #000; 
+  font-size: 12px; 
+  padding: 15px 20px; 
+  border: none; 
+
+  border-radius: 0px; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-family: 'Montserrat';
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+
+
 /* <!-- ''' Header Menu Bar ''' --> */
 
 header {
@@ -260,6 +287,9 @@ nav {
   width: 17.5%;
   height: 55vh; /* Keep the height */
   background-image: 
+
+    /* <https://stackoverflow.com/questions/53425836/css-square-background-image>, (<#5>), Stackoverflow.com */
+
       linear-gradient(0deg, #e0e0e0 1px, transparent 1px), 
       linear-gradient(90deg, #e0e0e0 1px, transparent 1px), 
       linear-gradient(45deg, transparent 49.5%, #e0e0e0 49.5%, #e0e0e0 50.5%, transparent 50.5%), /* Very light grey */
@@ -277,9 +307,6 @@ nav {
       0 0;
 
 }
-
-
-
 
 
 .pricing-card h3 {
@@ -311,7 +338,7 @@ nav {
 }
 
 .price {
-  font-size: 28px;
+  font-size: 31px;
   font-weight: bold;
   margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
@@ -354,7 +381,6 @@ nav {
   height: 60vh;
   padding-bottom: 20px;
   padding-top: 10px;
-  /* background-image: url("C:/Users/Dell/Desktop/ishi usc/web-hw1/images/notebook.jpg"); */
   background-image: url("images/notebook.jpg");
 
   background-size: cover;
@@ -432,28 +458,3 @@ footer p {
   font-size: 0.6rem;
   font-family: 'Montserrat';
 }
-
-.social-icons-optima a {
-  margin: 0 10px;
-  display: inline-block;
-}
-
-.social-icons-optima img {
-  width: 26px;
-  height: 26px;
-}
-
-.cta-btn {
-  background-color: #ffdd00; 
-  color: #000; 
-  font-size: 12px; 
-  padding: 15px 20px; 
-  border: none; 
-
-  border-radius: 0px; 
-  text-decoration: none; 
-  display: inline-block; 
-  font-family: 'Montserrat';
-  /* transition: background-color 0.3s ease, color 0.3s ease; */
-}
-
