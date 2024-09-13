@@ -376,7 +376,7 @@ nav {
   align-items: center;
   height: 65vh;
   padding-bottom: 20px;
-  padding-top: 185px;
+  padding-top: 165px;
   background-image: url("images/notebook.jpg");
 
   background-size: cover;
@@ -456,6 +456,6 @@ footer h2 {
 
 footer p {
   margin-bottom: 20px;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-family: 'Montserrat';
 }
