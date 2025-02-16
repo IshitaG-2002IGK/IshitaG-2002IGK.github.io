@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Ishita Gopalakrishnan - Portfolio of a software engineer with experience in web development, machine learning, and cloud technologies."
+    />
+    <meta
+      name="keywords"
+      content="Ishita Gopalakrishnan, Portfolio, Software Engineer, Web Development, Machine Learning, Cloud Computing, University Of Southern California"
+    />
+    <meta name="author" content="Ishita Gopalakrishnan" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Ishita Gopalakrishnan | Portfolio" />
+    <meta
+      property="og:description"
+      content="Portfolio of Ishita Gopalakrishnan - Software Engineer, Web Developer, and Machine Learning Enthusiast."
+    />
+    <meta property="og:image" content="assets/seo_image.jpeg" />
+    <meta property="og:url" content="https://ysuryavanshi.github.io" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ishita Gopalakrishnan | Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Ishita Gopalakrishnan - Software Engineer, Web Developer, and Machine Learning Enthusiast."
+    />
+    <meta name="twitter:image" content="assets/seo_image.jpeg" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/favicon-96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16.png"
+    />
+    <title>Ishita Gopalakrishnan | Portfolio</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ishita Gopalakrishnan",
+        "jobTitle": "Software Engineer",
+        "url": "https://ysuryavanshi.github.io",
+        "sameAs": [
+          "https://github.com/IshitaG-2002IGK,
+          "https://www.linkedin.com/in/ishitagopalakrishnan/"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "University Of Southern California"
+        },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "University Of Southern California"
+        }
+      }
+    </script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #f8f9fa;
+        color: #343a40;
+        line-height: 1.6;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .navbar {
+        background-color: #ffffff !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: #343a40 !important;
+        font-weight: bold;
+      }
+
+      .nav-link:hover {
+        color: #3498db !important;
+      }
+
+      .hero {
+        height: 100vh;
+        background: url("https://source.unsplash.com/1600x900/?technology,code")
+          no-repeat center center/cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+
+      .hero-content h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #343a40;
+      }
+
+      .hero-content p {
+        font-size: 1.5rem;
+        color: #343a40;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: #343a40;
+        position: relative;
+      }
+
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #3498db;
+        margin: 0.5rem auto;
+      }
+
+      .ratio-9x16 {
+        position: relative;
+        width: 100%;
+        padding-bottom: calc(16 / 9 * 100%);
+        overflow: hidden;
+        border-radius: 8px;
+      }
+
+      .ratio-9x16 > img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .card {
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-title {
+        color: #3498db;
+        font-weight: 700;
+      }
+
+      .timeline {
+        position: relative;
+        padding: 2rem 0;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 100%;
+        background: #3498db;
+      }
+
+      .timeline-item {
+        position: relative;
+        width: 50%;
+        padding: 1rem 2rem;
+      }
+
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+        background: #3498db;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      .timeline-item:nth-child(odd) {
+        left: 0;
+        text-align: right;
+      }
+
+      .timeline-item:nth-child(odd)::before {
+        left: -10px;
+        right: auto;
+      }
+
+      .timeline-item:nth-child(even) {
+        left: 50%;
+        text-align: left;
+      }
+
+      @media (max-width: 768px) {
+        .timeline::before {
+          left: 8%;
+        }
+
+        .timeline-item {
+          width: 100%;
+          padding-left: 4rem;
+          padding-right: 2rem;
+        }
+
+        .timeline-item:nth-child(odd),
+        .timeline-item:nth-child(even) {
+          left: 0;
+          text-align: left;
+        }
+
+        .timeline-item::before {
+          left: -10px;
+        }
+      }
+
+      .skill-title {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .skill-badges span {
+        margin: 0.2rem;
+      }
+
+      .social-icons a {
+        font-size: 1.5rem;
+        margin: 0 0.5rem;
+        color: #343a40;
+        transition: color 0.3s;
+      }
+
+      .social-icons a:hover {
+        color: #3498db;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ishita Gopalakrishnan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1>Ishita Gopalakrishnan</h1>
+            <p>Code, Creativity & Chaos – Building, Breaking, and Beyond!</p>
+        </div>
+    </section> -->
+
+    <section
+      class="hero"
+      id="hero"
+      style="
+        background: url('assets/nice.jpg') no-repeat center center/cover;
+        height: 100vh;
+      "
+    >
+      <div
+        class="hero-overlay"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+        "
+      ></div>
+      <div
+        class="hero-content container"
+        style="position: relative; z-index: 1; color: white; text-align: center"
+      >
+        <h1 style="color: white">Ishita Gopalakrishnan</h1>
+        <p style="color: white; font-size: 22px">
+          Code, Creativity & Chaos – Building, Breaking, and Beyond!
+        </p>
+        <p style="color: white; font-size: 20px">
+          <a
+            href="https://www.linkedin.com/in/ishitagopalakrishnan/"
+            target="_blank"
+            style="
+              color: white;
+              text-decoration: none;
+              transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+            "
+            onmouseover="this.style.color='#ffcc00'; this.style.transform='scale(1.1)';"
+            onmouseout="this.style.color='white'; this.style.transform='scale(1)';"
+            >LinkedIn</a
+          >
+          |
+
+          <a
+            href="https://linktr.ee/Ishita_Gopalakrishnan"
+            target="_blank"
+            style="
+              color: white;
+              text-decoration: none;
+              transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+            "
+            onmouseover="this.style.color='#ffcc00'; this.style.transform='scale(1.1)';"
+            onmouseout="this.style.color='white'; this.style.transform='scale(1)';"
+            >Linktree</a
+          >
+          |
+
+          <a
+            href="https://github.com/IshitaG-2002IGK"
+            target="_blank"
+            style="
+              color: white;
+              text-decoration: none;
+              transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+            "
+            onmouseover="this.style.color='#ffcc00'; this.style.transform='scale(1.1)';"
+            onmouseout="this.style.color='white'; this.style.transform='scale(1)';"
+            >GitHub</a
+          >
+          |
+
+          <a
+            href="https://ishita-g.netlify.app/"
+            target="_blank"
+            style="
+              color: white;
+              text-decoration: none;
+              transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+            "
+            onmouseover="this.style.color='#ffcc00'; this.style.transform='scale(1.1)';"
+            onmouseout="this.style.color='white'; this.style.transform='scale(1)';"
+            >Website</a
+          >
+          |
+
+          <a
+            href="mailto:ishitagopal98@gmail.com"
+            style="
+              color: white;
+              text-decoration: none;
+              transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+            "
+            onmouseover="this.style.color='#ffcc00'; this.style.transform='scale(1.1)';"
+            onmouseout="this.style.color='white'; this.style.transform='scale(1)';"
+            >Email</a
+          >
+          |
+
+          <span>Los Angeles, California</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-md-3 mb-4 mb-md-0">
+            <div class="ratio-9x16">
+              <img
+                src="assets/banner_image.jpg"
+                class="img-fluid rounded"
+                alt="Profile picture of Ishita Gopalakrishnan"
+              />
+            </div>
+          </div>
+          <div class="col-md-9">
+            <p>
+              I'm a Master's Candidate in Computer Science at the University of
+              Southern California. I have a strong foundation in artificial
+              intelligence, machine learning, and product management. My
+              hands-on experience includes developing scalable, high-performance
+              applications using Python, JavaScript, and cloud technologies, as
+              well as leading full-stack projects that optimize system
+              efficiency and enhance user engagement.
+            </p>
+
+            <p>
+              During my tenure at research institutions and startups, I honed my
+              skills in designing AI-driven solutions, streamlining workflows,
+              and improving system architectures. My technical expertise spans
+              Python, JavaScript, TypeScript, SQL, and cloud platforms, with
+              experience in cutting-edge tools such as TensorFlow, AWS, and
+              Kubernetes.
+            </p>
+
+            <p>
+              As I complete my graduate studies, I'm eager to apply my industry
+              experience and technical expertise in impactful roles where I can
+              drive innovation. I'm passionate about collaborating with
+              professionals and organizations that embrace problem-solving and
+              emerging technologies. Let’s connect and explore how we can work
+              together to create meaningful solutions.
+            </p>
+
+            <p>
+              <strong>Interests:</strong> Artificial Intelligence, Machine
+              Learning, Full-Stack Development, Product Management, and
+              Hackathons.
+            </p>
+
+            <p>
+              <strong>Hobbies:</strong> Coffee-fueled coding sessions,
+              hackathons (oh I already mentioned that :)), exploring new tech,
+              mentoring, and creating Pinterest mood boards.
+            </p>
+
+            <div class="social-icons mt-4">
+              <a
+                href="https://github.com/IshitaG-2002IGK"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ishitagopalakrishnan/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center">Skills</h2>
+        <div class="row">
+          <div class="col-md-4 mt-4">
+            <h5 class="skill-title">Programming & Frameworks</h5>
+            <div class="skill-badges">
+              <span class="badge bg-primary m-1">Python</span>
+              <span class="badge bg-primary m-1">Scala</span>
+              <span class="badge bg-primary m-1">Java</span>
+              <span class="badge bg-primary m-1">C</span>
+              <span class="badge bg-primary m-1">C++</span>
+              <span class="badge bg-primary m-1">R</span>
+              <span class="badge bg-primary m-1">JavaScript</span>
+              <span class="badge bg-primary m-1">TypeScript</span>
+              <span class="badge bg-primary m-1">ReactJS</span>
+              <span class="badge bg-primary m-1">React Native</span>
+              <span class="badge bg-primary m-1">AngularJS</span>
+              <span class="badge bg-primary m-1">SwiftUI</span>
+              <span class="badge bg-primary m-1">Flask</span>
+              <span class="badge bg-primary m-1">Selenium</span>
+              <span class="badge bg-primary m-1">HTML</span>
+              <span class="badge bg-primary m-1">CSS</span>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-4">
+            <h5 class="skill-title">Data Analytics & Cloud Deployment</h5>
+            <div class="skill-badges">
+              <span class="badge bg-info m-1">PowerBI</span>
+              <span class="badge bg-info m-1">Tableau</span>
+              <span class="badge bg-info m-1">Microsoft Office Excel</span>
+              <span class="badge bg-info m-1">AWS</span>
+              <span class="badge bg-info m-1">Google Cloud Platform (GCP)</span>
+              <span class="badge bg-info m-1">Vercel</span>
+            </div>
+          </div>
+          <div class="col-md-4 mt-4">
+            <h5 class="skill-title">Databases</h5>
+            <div class="skill-badges">
+              <span class="badge bg-secondary m-1">MySQL</span>
+              <span class="badge bg-secondary m-1">PostgreSQL</span>
+              <span class="badge bg-secondary m-1">MongoDB</span>
+            </div>
+          </div>
+          <div class="col-md-4 mt-4">
+            <h5 class="skill-title">Machine Learning</h5>
+            <div class="skill-badges">
+              <span class="badge bg-success m-1">PyTorch</span>
+              <span class="badge bg-success m-1">TensorFlow</span>
+              <span class="badge bg-success m-1">Scikit-Learn</span>
+              <span class="badge bg-success m-1">Keras</span>
+              <span class="badge bg-success m-1">Hugging Face</span>
+              <span class="badge bg-success m-1">OpenCV</span>
+              <span class="badge bg-success m-1">Pandas</span>
+              <span class="badge bg-success m-1">NumPy</span>
+              <span class="badge bg-success m-1">Matplotlib</span>
+              <span class="badge bg-success m-1">Seaborn</span>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-4">
+            <h5 class="skill-title">Tools & Systems</h5>
+            <div class="skill-badges">
+              <span class="badge bg-warning m-1">Linux</span>
+              <span class="badge bg-warning m-1">SSH</span>
+              <span class="badge bg-warning m-1">Shell Scripting</span>
+              <span class="badge bg-warning m-1">Git</span>
+              <span class="badge bg-warning m-1">Docker</span>
+              <span class="badge bg-warning m-1">Kubernetes</span>
+              <span class="badge bg-warning m-1">AWS</span>
+              <span class="badge bg-warning m-1">Google Cloud</span>
+              <span class="badge bg-warning m-1">MySQL</span>
+              <span class="badge bg-warning m-1">PostgreSQL</span>
+              <span class="badge bg-warning m-1">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-4">
+            <h5 class="skill-title">Soft Skills</h5>
+            <div class="skill-badges">
+              <span class="badge bg-dark m-1">Leadership</span>
+              <span class="badge bg-dark m-1">Problem Solving</span>
+              <span class="badge bg-dark m-1">Collaboration</span>
+              <span class="badge bg-dark m-1">Communication</span>
+              <span class="badge bg-dark m-1">Adaptability</span>
+              <span class="badge bg-dark m-1">Creativity</span>
+              <span class="badge bg-dark m-1">Time Management</span>
+              <span class="badge bg-dark m-1">Mentorship</span>
+              <span class="badge bg-dark m-1">Critical Thinking</span>
+              <span class="badge bg-dark m-1">Initiative</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">SkySense: Hyper-Accurate Weather Forecasting with Real-Time Geolocation (IOS App) </h5>
+                <small class="text-muted">Sep 2024 - Dec 2024</small>
+                <p class="card-text mt-2">
+                    A revolutionary iOS 16 weather app that combines real-time hyper-accurate forecasts, advanced geolocation APIs, and stunning Highcharts visualizations to deliver a seamless, personalized, and visually captivating weather tracking experience!
+                </p>
+                <ul>
+                    <ul>
+                        <li>Developed a <strong>cutting-edge iOS 16 weather application</strong> delivering <strong>hyper-accurate, real-time forecasts</strong> with advanced <strong>geolocation capabilities</strong> for personalized weather insights.</li>
+                        <li>Integrated <strong>Google Maps API</strong>, <strong>IP Info API</strong>, <strong>Autocomplete API</strong>, and <strong>Geolocation API</strong> to dynamically tailor weather data based on user location, ensuring precision and relevance.</li>
+                        <li>Utilized <strong>Highcharts</strong> to create <strong>stunning, interactive data visualizations</strong>, transforming complex weather trends into intuitive and engaging analytics.</li>
+                        <li>Designed for <strong>peak performance</strong> and a <strong>sleek, user-friendly experience</strong>, redefining how users interact with weather tracking tools.</li>
+                        <li>Combined <strong>advanced APIs</strong> and <strong>modern design principles</strong> to deliver a seamless and visually appealing weather forecasting experience.</li>
+                      </ul>
+                  <li>
+                    📌
+                    <a href="https://github.com/IshitaG-2002IGK/ios-app-ish"
+                      ><strong>GitHub Repository</strong></a
+                    >.
+                  </li>
+                  <li>
+                    📌
+                    <a href="https://www.youtube.com/watch?v=hHrRR7Pw2vs"
+                      ><strong>Video Link</strong></a
+                    >
+                  </li>
+                </ul>
+                <p class="text-muted mt-3">
+                  <em
+                    >Project completed at University Of Southern California.</em
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">NeuroSketch: Deep Learning-Based Early Detection of Parkinson’s Disease Using Drawing Pattern Analysis</h5>
+                <small class="text-muted">Nov 2023 - Mar 2024</small>
+                <p class="card-text mt-2">
+                    A deep learning-based system using Keras and Streamlit to detect Parkinson’s Disease by analyzing spiral and wave drawing patterns, providing a non-invasive and user-friendly diagnostic tool.
+                </p>
+                <ul>
+                    <ul>
+                        <li>Developed a <strong>deep learning-based system</strong> using the <strong>Keras model</strong> to analyze <strong>spiral and wave drawing patterns</strong> for early detection of <strong>Parkinson’s Disease (PD)</strong>, achieving an impressive <strong>93.4% accuracy</strong> and an <strong>F1 score of 93.94%</strong>.</li>
+                        <li>Built an intuitive and user-friendly interface with <strong>Streamlit</strong>, enabling seamless interaction for users to upload sketches and receive real-time predictions.</li>
+                        <li>Leveraged <strong>ensemble classification</strong> to enhance prediction reliability, with <strong>94% recall</strong> and <strong>93.5% precision</strong>, ensuring robust and accurate results.</li>
+                        <li>Published in <strong>IEEE Xplore</strong> and presented at <strong>IEEE conferences</strong>, showcasing the project’s impact in <strong>computer-aided diagnosis</strong>.</li>
+                        <li>Focused on <strong>early detection</strong> of PD by analyzing motor impairments in drawing patterns, providing a non-invasive and efficient diagnostic tool for clinical decision-making.</li>
+                        <li>
+                            📌
+                            <a href="https://github.com/IshitaG-2002IGK/parkinsons-detection-app"
+                              ><strong>GitHub Repository</strong></a
+                            >.
+                          </li>
+                    
+                    </ul>
+                </ul>
+                <p class="text-muted mt-3">
+                  <strong>
+                    <em
+                      >Paper published in IEEE Xplore:
+                      <a
+                        href="https://ieeexplore.ieee.org/document/10512167"
+                        target="_blank"
+                        >View Paper</a
+                      >
+                    </em>
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  SecurePass: Multi-Channel OTP Verification System
+                </h5>
+                <small class="text-muted">May 2023 - June 2023</small>
+                <p class="card-text mt-2">
+                  Designed and trained a Recurrent Convolutional Neural Network
+                  to classify audio clips with advanced feature extraction.
+                </p>
+                <ul>
+                  <ul>
+                    <li>
+                      <strong>User Selection</strong> – Users choose OTP
+                      delivery via email or phone through a form, prompting for
+                      their email or phone number accordingly.
+                    </li>
+                    <li>
+                      <strong>OTP Generation & Delivery</strong> – A 6-digit OTP
+                      is generated and sent via
+                      <strong>SMTP (Gmail)</strong> for emails or
+                      <strong>Twilio SMS API</strong> for phones.
+                    </li>
+                    <li>
+                      <strong>OTP Input & Verification</strong> – Users enter
+                      the OTP on a dedicated page, where it’s validated against
+                      the generated OTP for accuracy.
+                    </li>
+                    <li>
+                      <strong>Validation & Result</strong> – Successful
+                      verification leads to a <strong>success page</strong>;
+                      failures redirect to a <strong>failure page</strong>.
+                    </li>
+                    <li>
+                      <strong>Flask Web App</strong> – Built using
+                      <strong>Flask</strong>, the app handles requests,
+                      processes inputs, and dynamically routes users.
+                    </li>
+                  </ul>
+                  <li>
+                    📌
+                    <a href="https://github.com/IshitaG-2002IGK/otp-sender"
+                      ><strong>GitHub Repository</strong></a
+                    >.
+                  </li>
+                </ul>
+                <!-- <p class="text-muted mt-3"><em>Project completed at University Of Southern California.</em></p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Forest Fires Prediction using Geo satellite Images &
+                  visualization using Streamlit
+                </h5>
+                <small class="text-muted">Mar 2023 - Jun 2023</small>
+                <p class="card-text mt-2">
+                  An advanced forest fire prediction system leveraging machine
+                  learning and diverse datasets to accurately detect and
+                  forecast wildfires globally, built with a robust tech stack
+                  for seamless integration and visualization.
+                </p>
+                <ul>
+                  <ul>
+                    <li>
+                      Developed a
+                      <strong>cutting-edge 3rd-year project</strong> focused on
+                      <strong>predicting and detecting forest fires</strong>
+                      across global regions, leveraging advanced data analysis
+                      and machine learning techniques.
+                    </li>
+                    <li>
+                      Seamlessly integrated
+                      <strong>diverse datasets</strong> and utilized
+                      <strong>multiple environmental parameters</strong> to
+                      accurately predict forest fires, employing a
+                      <strong>Random Forest Classifier model</strong> to deliver
+                      precise and reliable results.
+                    </li>
+                    <li>
+                      Built with a robust <strong>Tech Stack</strong>:
+                      <strong>HTML5</strong>, <strong>CSS3</strong>,
+                      <strong>JavaScript</strong>, <strong>Flask</strong>,
+                      <strong>MongoDB</strong>, and powerful
+                      <strong>ML libraries</strong> such as
+                      <strong>pandas</strong>, <strong>numpy</strong>,
+                      <strong>pymongo</strong>, <strong>Streamlit</strong>,
+                      <strong>sklearn</strong>, <strong>seaborn</strong>, and
+                      <strong>Mapbox API</strong> for dynamic visualization.
+                    </li>
+                    <li>
+                      📌
+                      <a
+                        href="https://github.com/IshitaG-2002IGK/miniproj-forest-fire-prediction"
+                        ><strong>GitHub Repository</strong></a
+                      >.
+                    </li>
+                  </ul>
+                </ul>
+                <!-- <p class="text-muted mt-3"><em>Project completed at University Of Southern California.</em></p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Criminal pyschology</h5>
+                <small class="text-muted">Nov 2022 - Jan 2023</small>
+                <p class="card-text mt-2">
+                  Pioneered an innovative platform bridging emotional insights
+                  with psychological research, empowering a deeper understanding
+                  of human emotions through technology.
+                </p>
+                <ul>
+                  <ul>
+                    <li>
+                      Developed an advanced system to
+                      <strong>predict emotions</strong> from movie scenes,
+                      revolutionizing <strong>psychological research</strong> on
+                      human behavior.
+                    </li>
+                    <li>
+                      Designed a <strong>machine learning model</strong> using
+                      <strong>sentiment analysis</strong> to analyze movie
+                      reviews, providing critical insights for psychological
+                      studies.
+                    </li>
+                    <li>
+                      Built an end-to-end workflow: reviews → ML-driven
+                      <strong>emotion prediction</strong> → structured database
+                      → expert analysis, enabling data-driven research.
+                    </li>
+                    <li>
+                      Tech Stack:
+                      <strong>HTML5, CSS3, JavaScript, Flask, MongoDB</strong>,
+                      and ML libraries like
+                      <strong>pandas, numpy, Streamlit, sklearn</strong>.
+                    </li>
+                    <li>
+                      📌
+                      <a
+                        href="https://github.com/IshitaG-2002IGK/criminal-psychology-analysis"
+                        target="_blank"
+                        ><strong>GitHub Repository</strong></a
+                      >
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Tri Facto - ECommerce Website</h5>
+                <small class="text-muted">Aug 2022 - Oct 2022</small>
+                <p class="card-text mt-2">
+                  Achieved Top 6 out of 600 teams at iTech HackFest 2022 for
+                  pioneering an inclusive online shopping platform, empowering
+                  small businesses and driving economic growth.
+                </p>
+                <ul>
+                  <ul>
+                    <li>
+                      <strong>Online shopping</strong> accessible to a
+                      <strong>wider section of people</strong> to promote
+                      <strong>small businesses</strong> and pave the way for
+                      their <strong>upliftment</strong>.
+                    </li>
+                    <li>
+                      <strong>Tech Stack</strong>: <strong>HTML5</strong>,
+                      <strong>CSS3</strong>, <strong>JavaScript</strong>,
+                      <strong>Webspeech API</strong>, <strong>Flask</strong>,
+                      <strong>Python</strong>, <strong>Selenium</strong>,
+                      <strong>MongoDB</strong>, <strong>numpy</strong>,
+                      <strong>Yfinance</strong>.
+                    </li>
+                    <li>
+                      <strong>Stock market analysis</strong> of various shops to
+                      promote
+                      <strong>local business</strong> (<strong>ONDC</strong>).
+                    </li>
+                    <li>
+                      <strong>Speech-to-text conversion</strong> using
+                      <strong> JavaScript</strong> to improve
+                      <strong>accessibility</strong> for the
+                      <strong>visually impaired</strong> to access the website.
+                    </li>
+                    <li>
+                      📌
+                      <a href="https://github.com/IshitaG-2002IGK/tri-facto"
+                        ><strong>Github Repository</strong></a
+                      >
+                    </li>
+                    <li>
+                      📌
+                      <a href="https://devpost.com/software/trifacto"
+                        ><strong>Video Link</strong></a
+                      >
+                    </li>
+                  </ul>
+                </ul>
+                <!-- <p class="text-muted mt-3"><em>Project completed at University Of Southern California.</em></p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Prohost: Online Integrated Project Hosting Platform
+                </h5>
+                <small class="text-muted">Apr 2022 - June 2022</small>
+                <p class="card-text mt-2">
+                  Secured 1st position in the Internal Hackathon round for Smart
+                  India Hackathon 2022.
+                </p>
+                <ul>
+                  <ul>
+                    <li>
+                      Developed a
+                      <strong>real-time application</strong> allowing users to
+                      upload dynamic projects and instantly receive
+                      <strong>functional deployed links</strong>, streamlining
+                      the project sharing and deployment process.
+                    </li>
+                    <li>
+                      Utilized a robust tech stack including
+                      <strong
+                        >HTML5, CSS3, JavaScript, Python, Flask, GCP Cloud Run,
+                        Docker, and MongoDB</strong
+                      >
+                      to build a scalable and efficient platform.
+                    </li>
+                    <li>
+                      Played a key role in
+                      <strong>frontend development</strong>, enabling seamless
+                      user interactions, and implemented backend functionality
+                      to extract and process content from uploaded zip files.
+                    </li>
+                    <li>
+                      Spearheaded the deployment process using
+                      <strong>Docker container images</strong>, ensuring
+                      consistent and reliable project deployments across
+                      environments.
+                    </li>
+                    <li>
+                      📌
+                      <a
+                        href="https://github.com/IshitaG-2002IGK/integrated-project-platform"
+                        target="_blank"
+                        ><strong>GitHub Repository</strong></a
+                      >
+                    </li>
+                    <li>
+                      📌
+                      <a href="https://youtu.be/CfPXQcT5kAE" target="_blank"
+                        ><strong>Video Link</strong></a
+                      >
+                    </li>
+                  </ul>
+                </ul>
+                <!-- <p class="text-muted mt-3"><em>Project completed at University Of Southern California.</em></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Jinica - Lyrics Detection App</h5>
+                <small class="text-muted">Mar 2022 - April 2022</small>
+                <p class="card-text mt-2">
+                  Earned special recognition at the Jina AI-sponsored
+                  Featurethon for delivering innovative and impactful
+                  contributions in AI and machine learning.
+                </p>
+                <ul>
+                  <ul>
+                    <li>
+                      Designed and implemented an
+                      <strong>MLOps pipeline</strong> using
+                      <strong>Jina AI</strong> for advanced query analysis,
+                      building a robust
+                      <strong>recommendation system</strong> tailored for music
+                      enthusiasts.
+                    </li>
+                    <li>
+                      Focused on
+                      <strong>lyrics emphasis and extraction</strong>, enabling
+                      deeper insights into song content and enhancing user
+                      engagement through personalized recommendations.
+                    </li>
+                    <li>
+                      Leveraged a powerful tech stack including
+                      <strong>Jina AI ML pipeline</strong>,
+                      <strong>Streamlit</strong> for interactive UI,
+                      <strong>Docker</strong> for containerization, and ML
+                      libraries like <strong>plotly</strong> and
+                      <strong>pandas</strong> for data visualization and
+                      analysis.
+                    </li>
+                    <li>
+                      📌
+                      <a
+                        href="https://github.com/IshitaG-2002IGK/lyrics-jina"
+                        target="_blank"
+                        ><strong>GitHub Repository</strong></a
+                      >
+                    </li>
+                    <li>
+                      📌
+                      <a
+                        href="https://www.youtube.com/watch?v=12GG5AhiPH4"
+                        target="_blank"
+                        ><strong>Video Link</strong></a
+                      >
+                    </li>
+                  </ul>
+                </ul>
+
+                <p class="text-muted mt-3">
+                  <strong>
+                    <em
+                      >Paper published in arXiv:
+                      <a
+                        href="https://arxiv.org/abs/2308.03842"
+                        target="_blank"
+                        >View Paper</a
+                      >
+                    </em>
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Mednet</h5>
+                <small class="text-muted">Nov 2021 - Jan 2022</small>
+                <p class="card-text mt-2">
+                  Achieved recognition for innovation and impact at the HackFit
+                  Hackathon on Devpost, showcasing a cutting-edge solution that
+                  stood out for its creativity and technical excellence.
+                </p>
+                <ul>
+                  <ul>
+                    <li>
+                      Built <strong>MedNet</strong>, a robust healthcare
+                      communication platform, primarily using
+                      <strong>React</strong>, ensuring a seamless and responsive
+                      user experience for patients, doctors, and their families.
+                    </li>
+                    <li>
+                      Integrated <strong>Firebase</strong> for secure
+                      <strong>Google authentication</strong> and reliable
+                      storage of chats, images, and message history, ensuring
+                      data privacy and accessibility for all users.
+                    </li>
+                    <li>
+                      Developed an <strong>AI-powered chatbot</strong> using
+                      <strong>ReactJS</strong>, leveraging the
+                      <strong>Speechly API</strong> to enable real-time
+                      <strong>speech-to-text conversion</strong> via an
+                      integrated microphone, enhancing accessibility for users
+                      with disabilities.
+                    </li>
+                    <li>
+                      Utilized a modern tech stack including
+                      <strong>HTML5</strong>, <strong>CSS3</strong>,
+                      <strong>JavaScript</strong>, <strong>React JS</strong>,
+                      <strong>Firebase</strong>, and
+                      <strong>Speechly API</strong>, ensuring a scalable and
+                      maintainable codebase.
+                    </li>
+                    <li>
+                      📌
+                      <a
+                        href="https://github.com/IshitaG-2002IGK/MedNet"
+                        target="_blank"
+                        ><strong>GitHub Repository</strong></a
+                      >
+                    </li>
+                    <li>
+                      📌
+                      <a
+                        href="https://www.youtube.com/watch?v=8LH5BOBK3iA"
+                        target="_blank"
+                        ><strong>Video Link</strong></a
+                      >
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Yours Fakely: Online Fake Content Detection & Automated Alert System
+                </h5>
+                <small class="text-muted">October 2021 - December 2021</small>
+                <p class="card-text mt-2">
+                  Led the top-scoring team in the National Security Hackathon,
+                  developing a cutting-edge security solution recognized by the
+                  Government of India.
+                </p>
+                <ul>
+                  <ul>
+                    <li>
+                      Developed a real-time fake content detection application
+                      that examines the accuracy of content, links, or images by
+                      predicting their authenticity with a similarity score of
+                      up to <b>92%</b>.
+                    </li>
+                    <li>
+                      <b>Tech stack:</b> HTML5, CSS3, JavaScript, Python, Flask,
+                      <b>GCP Cloud Run</b>,
+                      <b
+                        >ML Models (SVM, Logistic Regression, Random Forest
+                        Classifier)</b
+                      >, Selenium, and BeautifulSoup.
+                    </li>
+                    <li>
+                      Achieved an <b>88% precision rate</b> in detecting
+                      misinformation using a hybrid ML approach.
+                    </li>
+                    <li>
+                      Presented at
+                      <b>5+ national and international hackathons</b>, including
+                      <b>Manthan</b>, receiving awards for innovation and
+                      impact.
+                    </li>
+                    <li>
+                      📌
+                      <a
+                        href="https://github.com/IshitaG-2002IGK/MedNet"
+                        target="_blank"
+                        ><strong>Github Repository</strong></a
+                      >
+                    </li>
+                    <li>
+                      📌
+                      <a
+                        href="https://www.youtube.com/watch?v=8LH5BOBK3iA"
+                        target="_blank"
+                        ><strong>Video Link</strong></a
+                      >
+                    </li>
+                  </ul>
+                </ul>
+
+                <p class="text-muted mt-3">
+                  <strong>
+                    <em
+                      >Paper published in IEEE Xplore:
+                      <a
+                        href="https://ieeexplore.ieee.org/document/10426433"
+                        target="_blank"
+                        >View Paper</a
+                      >
+                    </em>
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h5>MediVoice AI</h5>
+            <p class="mb-0">
+              <em>Software Engineer Intern (Part-Time)</em> | Philadelphia,
+              United States
+            </p>
+            <small>Dec 2024 – Present</small>
+            <p>
+              • Developed an <strong>AI-powered chatbot</strong> for patient
+              queries, integrating <strong>Athena Health API</strong> for
+              automated scheduling and record retrieval,
+              <strong>reducing manual workload by 40%</strong>.
+            </p>
+            <p>
+              • Deployed chatbot on <strong>AWS</strong> using
+              <strong>EC2 and Lambda</strong>,
+              <strong>improving scalability and response time by 30%</strong>.
+            </p>
+            <p>
+              • Enhanced the production website <strong>UI/UX</strong>,
+              <strong>reducing page load time by 25%</strong> and
+              <strong>boosting user engagement by 50%</strong>.
+            </p>
+            <p>
+              • Implemented <strong>data analytics tools</strong> to track
+              chatbot performance, leading to a
+              <strong>20% increase in user satisfaction</strong>.
+            </p>
+            <p>
+              • Conducted <strong>user testing and feedback sessions</strong>,
+              achieving a <strong>95% accuracy rate</strong> in query
+              resolution.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h5>Tamil Nadu Advanced Technical Training Institute</h5>
+            <p class="mb-0">
+              <em>Research Intern & Course Developer </em> | Chennai, India
+            </p>
+            <small>Jan 2024 – June 2024</small>
+            <p>
+              • Conducted
+              <strong>hands-on training for 100+ professionals</strong> on
+              <strong>SQL, NoSQL, AWS, and GCP</strong>, equipping them with
+              practical skills to manage and analyze data effectively, optimize
+              cloud infrastructure, and implement scalable solutions.
+            </p>
+            <p>
+              • Led <strong>AI/ML workshops</strong>, guiding businesses in
+              integrating <strong>AI-driven solutions</strong> into their
+              operations, enabling them to leverage predictive analytics,
+              automation, and machine learning models to drive innovation and
+              efficiency.
+            </p>
+            <p>
+              • Designed <strong>structured courses</strong> tailored to diverse
+              learning needs, incorporating interactive modules and real-world
+              case studies, which
+              <strong>improved engagement and learning outcomes</strong> by 40%
+              and received positive feedback from participants.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h5>Tactlabs</h5>
+            <p class="mb-0">
+              <em>Software Engineering Intern</em> | Ontario, Canada
+            </p>
+            <small>April 2021 – April 2023</small>
+            <p>
+              • Collaborated on several
+              <strong>international client projects</strong> involving app
+              creation using <strong>ML frameworks</strong>, delivering scalable
+              and innovative solutions.
+            </p>
+            <p>
+              • Led a team to develop
+              <strong>bots using ML and deep learning</strong> for automation,
+              <strong>boosting efficiency by 20%</strong> and reducing manual
+              intervention.
+            </p>
+            <p>
+              • Created <strong>POCs for Apache Kafka and Julia</strong>,
+              improving system performance by <strong>15%</strong> and enabling
+              real-time data processing capabilities.
+            </p>
+            <p>
+              • Developed <strong>forecasting models</strong> using historical
+              sales data, <strong>increasing accuracy by 10%</strong> and
+              enabling data-driven decision-making.
+            </p>
+            <p>
+              • Contributed to <strong>open-source projects</strong>:
+              prettymetrics, tson, CNERgy, cricpy2, RanCE, enhancing
+              community-driven tools and libraries.
+            </p>
+            <p>
+              • <strong>Learning Analytics Web extension</strong> – Designed the
+              <strong>UI/UX (and the logo)</strong>, and implemented the backend
+              for <strong>similarity-based bookmarking</strong>, improving user
+              experience and functionality.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h5>Featurepreneur (Subsidiary of Tactlabs)</h5>
+            <p class="mb-0">
+              <em>Software Developer Intern</em> | Ontario, Canada
+            </p>
+            <small>May 2021 – March 2023</small>
+            <p>
+              • Hosted
+              <strong>hackathons, webinars, and interactive projects</strong> to
+              equip students with <strong>industry-relevant skills</strong>.
+            </p>
+            <p>
+              • Led <strong>coding initiatives</strong> for underrepresented
+              communities, fostering inclusivity in tech.
+            </p>
+            <p>
+              • Contributed to a lot of
+              <strong>open-source projects</strong> and organized
+              <strong>tech events for underprivileged women</strong>, promoting
+              diversity and skill development in the tech industry.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <h5>Unschool</h5>
+          <p class="mb-0"><em>Digital Marketing Intern</em> | Noida, India</p>
+          <small>Nov 2020 – Jan 2021</small>
+          <p>
+            • Developed <strong>targeted marketing strategies</strong>,
+            including SEO and social media campaigns, driving a
+            <strong>25% increase in course enrollments</strong> and enhancing
+            brand visibility.
+          </p>
+          <p>
+            • Collaborated with HR teams to refine
+            <strong>profile-matching algorithms</strong>, improving
+            candidate-job fit accuracy by <strong>15%</strong> and streamlining
+            recruitment processes.
+          </p>
+          <p>
+            • Optimized <strong>landing pages</strong> and
+            <strong>CTAs</strong>, resulting in a
+            <strong>10% boost in conversion rates</strong> and improved user
+            engagement.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">University of Southern California</h5>
+                <p class="card-text"><strong>MS in Computer Science</strong></p>
+                <p class="card-text"><em>Aug 2024 – May 2026</em></p>
+                <p class="card-text">
+                  Specializing in Artificial Intelligence, Machine Learning, and
+                  Full-Stack Development. Engaged in research and projects
+                  focused on cloud computing, AI-driven applications, and
+                  scalable software systems.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Anna University, Chennai</h5>
+                <p class="card-text">
+                  <strong>B.Tech in Computer Science</strong>
+                </p>
+                <p class="card-text"><em>Oct 2020 – May 2024</em></p>
+                <p class="card-text">
+                  Graduated with the highest CGPA and awarded the Prometheus
+                  Gold Medal. Led and won multiple international hackathons,
+                  while also mentoring juniors in emerging technologies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="beyond" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center">
+          Shaping My Journey: Roles & Experiences
+        </h2>
+        <ul class="list-group mt-4">
+          <li class="list-group-item">
+            <strong
+              >Research Assistant:
+              <b><i>December 2024 – Present </i></b></strong
+            >
+            Working under Professor Anita Penkova, utilizing DINOv2 and data
+            augmentation to predict Parkinson's disease through handwriting
+            analysis of wave and spiral patterns.
+          </li>
+
+          <li class="list-group-item">
+            <strong
+              >Viterbi Graduate Orientation Leader:
+              <i>January 2024 - Present</i></strong
+            >
+            <ul>
+              <li>
+                Guided incoming graduate students during orientation sessions,
+                providing insights on academic resources, campus life, and
+                student support services.
+              </li>
+              <li>
+                Collaborated with faculty and staff to organize events,
+                fostering community building and networking opportunities.
+              </li>
+              <li>
+                Mentored new students, addressing their concerns and ensuring a
+                smooth transition to graduate life.
+              </li>
+            </ul>
+          </li>
+
+          <li class="list-group-item">
+            <strong>Special Projects Team – Web Application Developer:</strong>
+            <ul>
+              <li>
+                Enhancing platform User Interface and User Experience as part of
+                the 'Special Projects Team'.
+              </li>
+              <li>
+                Developing dynamic content retrieval and display for 'Election
+                coverage' and Annenberg's 'Capsule articles'.
+              </li>
+              <li>
+                Responsible for overseeing and contributing to USC Annenberg's
+                election news coverage, Capsule magazine, and investigations
+                page.
+              </li>
+              <li>
+                Serving as team liaison, collaborating with Annenberg editors to
+                align website design with thematic requirements.
+              </li>
+              <li>
+                Newsletter: Working on retrieving the top 10 trending articles
+                and sending them to the newsletter.
+              </li>
+              <li>
+                Utilized Cloudflare Workers and Google Analytics API to fetch
+                real-time data.
+              </li>
+            </ul>
+          </li>
+
+          <li class="list-group-item">
+            <strong>Clubs & Organizations:</strong> Active member of
+            <b
+              >SWE (Society of Women Engineers) and WIE (Women in
+              Engineering)</b
+            >, engaging in initiatives that empower women in technology, foster
+            professional growth, and build a strong engineering community.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container text-center">
+        <h2 class="section-title">Get in Touch</h2>
+        <p>
+          If you're interested in discussing a project or opportunity, feel free
+          to reach out via <a href="mailto:ishitagopal98.com">email</a> or
+          connect with me on social media.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p class="text-center">
+          &copy; 2025 Ishita Gopalakrishnan. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.addEventListener("load", async () => {
+        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+        const payload = {
+          page: "Resume",
+          timezone: timeZone,
+        };
+
+        try {
+          const postResponse = await fetch(
+            "https://eoqr8rigmljtr9j.m.pipedream.net",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(payload),
+            }
+          );
+        } catch (error) {
+          console.error("Error posting data:", error);
+        }
+      });
+    </script>
+  </body>
+</html>
